@@ -18,6 +18,58 @@ public static void main (String [] args)
 {
 
         Scanner Keyboard = new Scanner(System.in);
+        int x;
+        String school = "Washington";
+        
+        
+        x = Keyboard.nextInt();
+        //extended ifs order is important. 
+        
+        
+        if (x<10){
+            
+            System.out.println("You're a baby");    
+            System.out.println("What grade school are you in?");
+            Keyboard.nextLine();
+            school = Keyboard.nextLine();
+            
+            if (school.equals("Scott")){
+                System.out.println("Go Eagles "); //one equal sign is assignment
+                // double equal sign is comparison. DOES NOT WORK WITH STRINGS
+            
+            }else if (school =="Steeple Run"){
+                System.out.println("Go super stars");
+            }else{
+                System.out.println("Did you not go to a school");
+            }
+            
+            
+            
+        }else if (x<13){
+        
+            System.out.println("You;re still in junior high");
+        
+        }else if (x < 20){
+            System.out.println
+            ("You're still in high school");
+            
+        }else if (x < 55){ 
+            System.out.println
+            ("You are younger than Mr. Hayes. Ok.");
+        
+        }else if (x > 55){
+            System.out.println
+            ("You are older than Mr. Hayes. Retiring soon? Congratulations");
+            
+        }else if (x>0){
+            
+            System.out.println("How old are you bruh");
+        
+        
+        
+        
+        }
+        
 /**/
     String word1 = "apple";
     String word2 = "cat";
