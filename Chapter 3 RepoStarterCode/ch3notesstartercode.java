@@ -21,12 +21,13 @@ public static void main (String [] args)
         int x;
         String school = "Washington";
         
-        
+        /*
         x = Keyboard.nextInt();
         //extended ifs order is important. 
         
         
-        if (x<10){
+        if (x<10){ //extended ifs are like "or"s. 
+            //if your less than 10 or less than 13 or etc...
             
             System.out.println("You're a baby");    
             System.out.println("What grade school are you in?");
@@ -37,10 +38,11 @@ public static void main (String [] args)
                 System.out.println("Go Eagles "); //one equal sign is assignment
                 // double equal sign is comparison. DOES NOT WORK WITH STRINGS
             
-            }else if (school =="Steeple Run"){
+            }else if (school.equals("Steeple Run")){
                 System.out.println("Go super stars");
             }else{
-                System.out.println("Did you not go to a school");
+                System.out.println("You are not a soup star. That is very sad");
+                System.out.println("Yo what;s up it's Tartar in da house");
             }
             
             
@@ -70,14 +72,20 @@ public static void main (String [] args)
         
         }
         
-/**/
+*/
+/*
     String word1 = "apple";
     String word2 = "cat";
     String word3 = "dog";
-
-    if(word2.compareTo(word1)<0)//;end a statement BAD BAD simicolen
+    //compare by alphabetical order
+    // if a word comes before another one, result is negative
+    // if equal, result is 0
+    // if after, result is positive
+    
+    //compares by alphabetical order
+    if(word1.compareTo(word2)<0)//a semicolon ; ends a statement BAD BAD simicolen
     {
-        System.out.println(word2 +" is before " + word1  );
+        System.out.println(word1 +" is before " + word2  );
         System.out.println("and cats are evil" );
     }//ctrl M - will match brackets
     else
@@ -85,8 +93,8 @@ public static void main (String [] args)
 
     if(word2.compareTo(word3)<0)
         System.out.println(word2 +" is before " + word3  );
+*/
 /*
-
       int num = 5, num1 =10, num2 = 4;  // standard hours in a work week
 
       System.out.print ("Enter a number ");
@@ -99,14 +107,34 @@ public static void main (String [] args)
        num2 = Keyboard.nextInt();
 
       System.out.println ();
-/*
 
-       boolean a = true, b = false, c = false,d;
-        //System.out.println(a  );
-      // c =(a = true) || (b = true);
-      // System.out.println(a + "-" + b + "-" + c);
+      if (num>num1)
+           {
+               if (num>num2)
+                {
+                    System.out.println( num + "is the greatest number");
+                }
+                else {
+                    System.out.println( num2 + "is the greatest number");
+                }
+            }
+        else
+        {  
+            if (num1>num2){
+                System.out.println( num1 + "is the greatest number");
+            }
+            else {
+                System.out.println( num2 + " is the greatest number");
+            }
+        }
+      */
+      
 
-
+        boolean a = false, b = false, c = false,d;
+        System.out.println(a  );
+        c =(a = true) || (b = true);
+        System.out.println(a  );
+        System.out.println(a + "-" + b + "-" + c);
     //   c = (a = false) || (b = true);
     //   System.out.println(a + "-" + b+ "-" + c);
 
