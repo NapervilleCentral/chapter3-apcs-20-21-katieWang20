@@ -129,27 +129,49 @@ public static void main (String [] args)
         }
       */
       
-
+        // short circuiting
+        
         boolean a = false, b = false, c = false,d;
-        System.out.println(a  );
-        c =(a = true) || (b = true);
-        System.out.println(a  );
-        System.out.println(a + "-" + b + "-" + c);
+        
+        //System.out.println(a  );
+        //c = (a = true) || (b = true); // 
+        //System.out.println(a  );//short circuit on true
+       // System.out.println(a + "-" + b + "-" + c);
+        
     //   c = (a = false) || (b = true);
     //   System.out.println(a + "-" + b+ "-" + c);
 
-//     c =(a = false) && (b = true);
- //    System.out.print(a + "-" + b+ "-" + c);
+        //c =(a = false) && (b = true); // && short circuits on false. does not assign b = true
+        //System.out.print(a + "-" + b+ "-" + c); //if any is false, all are false
 //
-//     c = (a = true) && (b = false);
-//     System.out.print(a + "-" + b + "-" + c);
-
-//     d =!(a = true) || (b = true) && (c = true);
-//     System.out.print(a + "-" + b + "-" + c+ "-" + d);
-
+     //c = (a = true) && (b = false);
+     //System.out.print(a + "-" + b + "-" + c); // 
+//   =! (not equal to) is done first, then && (and) is done second, then | | (or) is done last
+    // if d is not equal to a or b = c (true), then everything is true 
+    // true is prioritized?
+    // d gets assigned true 
+    //d =!(a = true) || (b = true) && (c = true);
+     //System.out.print(a + "-" + b + "-" + c+ "-" + d);
+     
 
 /*  */
-
+    double wallet = 1 * 0.01 + 2 * 0.05 + 3 * 0.10 + 4 * 0.25;
+    System.out.println(wallet);
+    
+    // add tolerance level
+    
+    final double TOLERANCE = 0.01;
+    
+    
+    if (Math.abs(wallet-1.41)<TOLERANCE) //abs=  asbolute value. turns number into abs value
+    
+    {
+        System.out.println("correct");
+    }
+    else
+    {
+        System.out.println("Add good?");
+    }
 }// end of main
 
 
