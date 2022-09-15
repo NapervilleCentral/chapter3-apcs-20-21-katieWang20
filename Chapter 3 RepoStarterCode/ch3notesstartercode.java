@@ -155,6 +155,7 @@ public static void main (String [] args)
      
 
 /*  */
+    /*
     double wallet = 1 * 0.01 + 2 * 0.05 + 3 * 0.10 + 4 * 0.25;
     System.out.println(wallet);
     
@@ -172,7 +173,36 @@ public static void main (String [] args)
     {
         System.out.println("Add good?");
     }
-}// end of main
+    */
+    
+    char choice = Keyboard.nextLine().charAt(0);
+    
+    switch (choice){
+        
+        case 'h':
+            System.out.println("4.99");
+            break;
+            // has cascading effect if there is no break after this
+            // prints the next numbers if there is no break
+            // breaks stops the execution of a current structure
+            // it is also poor programming practice to use it for loop or while
+            // do not use it often
+            
+        case 'f':
+            System.out.println("1.99");
+            break;
+        case 's':
+            System.out.println("2.99");
+            break;
+        default:
+            System.out.println ("Invalid choice");
+            
+    
+    
+        }
+    
+    
+    }// end of main
 
 
 }// end of class
