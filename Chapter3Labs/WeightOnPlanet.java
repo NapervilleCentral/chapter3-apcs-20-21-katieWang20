@@ -1,9 +1,13 @@
 
 /**
- * Write a description of class WeightOnPlanet here.
- *
- * @author (your name)
- * @version (a version number or a date)
+ * Katie Wang
+ * 9/23/2022
+ * Weight on planet program
+ * 
+ * Calculator a person's weight on other planets
+ * Takes user input of their weight in pounds or kilograms, and the planet they choice
+ * Then multiplies it by the proportion needed to find the weight on the planet
+ * 
  */
 
 import java.util.Scanner;
@@ -66,7 +70,7 @@ public class WeightOnPlanet
                 
             case "Pluto":
                 weightOnOther = weightOnEarth * 0.06;
-            // I don't care if Pluto is not a planet, it is still something that a person would put in
+                // I don't care if Pluto is not a planet, it is still something that a person would put in because they think it is.
         
         }
         

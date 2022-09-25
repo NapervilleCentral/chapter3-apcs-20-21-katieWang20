@@ -1,9 +1,14 @@
 
 /**
- * Write a description of class LetterToNumberGrade here.
- *
- * @author (your name)
- * @version (a version number or a date)
+ * Katie Wang
+ * 9/23/22
+ * 
+ * Letter to number grade converter
+ * converts letters to number grade ranging from 0-4
+ * 0.3 is subtracted if a grade has a minus sign
+ * 0.3 is added if grade has a plus sign
+ * BUT A+ = 4
+ * so I interpreted as A B C D F = 3.7, 3, 2, 1, 0 respectively
  */
 
 import java.util.Scanner;
