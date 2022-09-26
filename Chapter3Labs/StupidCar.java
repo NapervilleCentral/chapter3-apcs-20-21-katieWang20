@@ -13,6 +13,11 @@ public class StupidCar
 {
     public static void main(String[] args){
         
+        short doorL;
+        short doorR;
+        short childLock;
+        short masterUnlock;
+        
         
         
         Scanner input = new Scanner(System.in);
@@ -20,15 +25,12 @@ public class StupidCar
         
         System.out.println("Car mechanism order: DL. DR. CL, MU, IL, IR, OL, OR, Gear");
         System.out.println("Enter the car mechanisms in this order.\n0 for off, 1 for activated\nGear options are P N D 1 2 3 R");
-        carInputs = input.nextLine();
-        //INTEGERING A CHAR  TURNS IT INTO ITS ASCII FORM
-        int doorL = carInputs.charAt(0);
-        int doorR = carInputs.charAt(1);
-        int childLock = carInputs.charAt(2);
-        int masterUnlock = carInputs.charAt(3);
+        doorL = input.nextShort();
+        doorR = input.nextShort();
         
-        System.out.println(carInputs.charAt(0));
-        System.out.println(doorL);
+        //INTEGERING A CHAR  TURNS IT INTO ITS ASCII FORM
+      
+        
         //use indexing
         // do NOT use indexing (read above)
         // .equals() does not like dereferenced chars (chars that are taken from an already-referenced/established string)

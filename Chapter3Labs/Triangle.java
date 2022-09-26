@@ -62,10 +62,12 @@ public class Triangle
           //converts rightTriangleTest to integer to use to compare. 
           
           
+          if (sideA < 0 || sideB < 0 || sideC < 0){
+              System.out.println("Sides should not be negative.");
+          }else if (sideA + sideB < sideC || sideA + sideC < sideB || sideB + sideC < sideA){ // Two sides added together HAVE to be greater than or equal to the other side. 
+              System.out.println("Error, this triangle is not possible.");  
           
-          if (sideA + sideB < sideC || sideA + sideC < sideB || sideB + sideC < sideA){ // Two sides added together HAVE to be greater than or equal to the other side. 
-              System.out.println("Error, this triangle is not possible. ");  
-          
+              
           }else if (sideA == sideB & sideA == sideC){
               System.out.println("The triangle is equalateral");
         
@@ -76,7 +78,7 @@ public class Triangle
               // can't spell
           }else if (intHyp == rightTriangleHyp){
               // if the square root of the two sides squared has decimals (that are not 0), then rightTriangleHyp would keep it while intHyp would still be a whole intiger number
-              //so it would not be a right triangle.
+              //so they would not equal to each other and it would not be a right triangle.
               //But if rightTriangleHyp is a whole number (decimal values are 0), then both would equal the same value, and then it would be a right triangle. 
             
               System.out.println("The triangle is right!");
@@ -103,7 +105,9 @@ public class Triangle
           
           // if the three angles do not add up to 180, then it can not be a triangle. if one of the sides is 0 degrees, it can not be a triangle. 
           // it is not possiblew for a triangle to have 0 degreess.
-          if (angleA + angleB + angleC != 180 || angleA == 0 || angleB == 0 || angleC == 0){
+          if (angleA < 0 || angleB < 0 || angleC < 0){
+              System.out.println("Angles should not be negative.");
+          }else if (angleA + angleB + angleC != 180 || angleA == 0 || angleB == 0 || angleC == 0){
               System.out.println("The total angles do not equal 180. This triangle is not possible.");
           
           }else if (angleA == 90 || angleB == 90 || angleC == 90){ // if any of the angles are 90 degrees, then it is automatically a right triangle 
