@@ -19,13 +19,14 @@ public class LetterToNumberGrade
         int highestNumber = 4;
         String letterGrade;
         double numberGrade = 0;
+        String invalidGrade = new String();
         Scanner input = new Scanner(System.in);
         
         
         System.out.print("Enter the letter grade (along with plus or minus if it has that) ");
         letterGrade = input.nextLine();
         
-        /*
+        /**
          * 
          * F = 0
          * D- = 0.7
@@ -42,7 +43,10 @@ public class LetterToNumberGrade
            A+ = 4.0
     
            */
-          
+        // compares user input to each of these letter grades and then assigns the number equivalent to numberGrade
+        // and then prints it out at the end (if it is valid)
+        //use .equals() because input is a string
+        
         if (letterGrade.equals("F")){
             numberGrade = 0;
         }else if (letterGrade.equals ("D-")){
@@ -69,10 +73,19 @@ public class LetterToNumberGrade
             numberGrade = 3.7;
         }else if (letterGrade.equals("A+")){
             numberGrade = 4;
+        }else{
+            invalidGrade = "invalid";
+            //assigns invalidGrade to invalid 
         }
         
+        // if "invalid" is assigned to the variable, print out that the grade is invalid. 
+        // Otherwise, the grade is valid and will print out the equivalent       
+        if (invalidGrade.equals("invalid")){
+            System.out.println("This grade is " + invalidGrade);
+        }else{
+            
         System.out.println("The number grade equivalent is " + numberGrade);
-        
+        }
         
     
     }
