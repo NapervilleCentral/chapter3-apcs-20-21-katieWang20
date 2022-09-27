@@ -17,6 +17,10 @@ public class StupidCar
         short doorR;
         short childLock;
         short masterUnlock;
+        short innerL;
+        short innerR;
+        short outerL;
+        short outerR;
         
         
         
@@ -27,6 +31,13 @@ public class StupidCar
         System.out.println("Enter the car mechanisms in this order.\n0 for off, 1 for activated\nGear options are P N D 1 2 3 R");
         doorL = input.nextShort();
         doorR = input.nextShort();
+        childLock = input.nextShort();
+        masterUnlock = input.nextShort();
+        innerL = input.nextShort();
+        innerR = input.nextShort();
+        outerL = input.nextShort();
+        outerR = input.nextShort();
+        
         
         //INTEGERING A CHAR  TURNS IT INTO ITS ASCII FORM
       
