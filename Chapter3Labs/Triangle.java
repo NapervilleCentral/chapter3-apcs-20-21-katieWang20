@@ -54,8 +54,9 @@ public class Triangle
               
           }else if (sideB < sideA && sideC < sideA){
               rightTriangleHyp = Math.sqrt(Math.pow(sideB, 2) + Math.pow(sideC, 2));
-            
+              
           }
+          
           
             
           int intHyp = (int) rightTriangleHyp;
