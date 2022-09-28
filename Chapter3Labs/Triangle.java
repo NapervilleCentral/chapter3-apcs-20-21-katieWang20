@@ -86,7 +86,7 @@ public class Triangle
              
           }else{
             
-              System.out.println("Your triangle is boring.");
+              System.out.println("Your triangle is scalene.");
             
           }
               
@@ -123,7 +123,7 @@ public class Triangle
               
           }else{
               //if the triangle meets neither of those criteria
-              System.out.println("Your triangle is boring.");
+              System.out.println("Your triangle is scalene.");
           }
           
           

@@ -75,11 +75,12 @@ public class LetterToNumberGrade
             numberGrade = 4;
         }else{
             invalidGrade = "invalid";
-            //assigns invalidGrade to invalid 
+            // use for comparison 
         }
         
         // if "invalid" is assigned to the variable, print out that the grade is invalid. 
         // Otherwise, the grade is valid and will print out the equivalent       
+        
         if (invalidGrade.equals("invalid")){
             System.out.println("This grade is " + invalidGrade);
         }else{

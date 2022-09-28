@@ -24,7 +24,7 @@ public class WeightOnPlanet
         String planetChoice;
         
         
-        System.out.println("How much do you weigh on Earth? (pounds or kilos) ");
+        System.out.println("Enter your weight on earth (pounds): ");
         weightOnEarth = input.nextInt();
         input.nextLine(); // skips over getting input from planetChoice = input.nextLine(); 
         // if this input.nextLine(); is not placed before it
@@ -75,7 +75,7 @@ public class WeightOnPlanet
         }
         
         
-        System.out.print("You weigh " + fmt.format(weightOnOther) + " on " + planetChoice);
+        System.out.print("You weigh " + fmt.format(weightOnOther) + " pounds on " + planetChoice);
     
     
     }
