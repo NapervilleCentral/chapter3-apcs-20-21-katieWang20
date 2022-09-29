@@ -39,7 +39,7 @@ public class Taxes
         tax = (income - 500000) * 0.06 + (50000 * 0.01) + (75000 - 50000)*0.02 + (100000 - 75000) * 0.03 + (250000 - 100000) * 0.04 + (500000 - 250000) * 0.05;
     }
     
-    System.out.printf("You have to pay $%.2f", tax);
+    System.out.printf("You have to pay $%.2f \n", tax);
     
     
     
