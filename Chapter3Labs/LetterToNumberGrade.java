@@ -19,7 +19,7 @@ public class LetterToNumberGrade
         int highestNumber = 4;
         String letterGrade;
         double numberGrade = 0;
-        String invalidGrade = new String();
+        boolean invalidGrade = false;
         Scanner input = new Scanner(System.in);
         
         
@@ -47,69 +47,122 @@ public class LetterToNumberGrade
         // and then prints it out at the end (if it is valid)
         //use .equals() because input is a string
         
-        
        
+        // compares the first letter of the string to each letter in the if statements
+        // if the entered string do not pass these conditions, then invalidGrade = true
+        
         if (letterGrade.substring(0,1).equals("F")){
             
-            if (letterGrade.length() == 2){
-                if (letterGrade.substring(1).equals("-")){   
-                    numberGrade = 0;
-                    System.out.println("sdfdsf");
-                }else if (letterGrade.substring(1).equals("+")){
-                    
+            if (letterGrade.length() >= 2){
+                invalidGrade = true;
                 
-                
-                }
             }else{
                 numberGrade = 0;
             
             }
         
-        if (letterGrade.substring(0,1).equals("D")){
+            
+        }else if (letterGrade.substring(0,1).equals("D")){
             if (letterGrade.length() == 2){
                 if (letterGrade.substring(1).equals("-")){
-                    numberGrade = 1.7;     
+                    numberGrade = 0.7;
+                    
                 }else if (letterGrade.substring(1).equals("+")){
-                    numberGrade = 2.3; 
+                    numberGrade = 1.3;
+                    
                 }else{
-                    invalidGrade = "invalid";
+                    invalidGrade = true;
+                    
                 }
+            }else if(letterGrade.length() > 2){
+                invalidGrade = true;
+                
+            }else{
+                
+                numberGrade = 2;
+                
+            }
+      
+        
+        }else if (letterGrade.substring(0,1).equals("C")){
+            if (letterGrade.length() == 2){
+                if (letterGrade.substring(1).equals("-")){
+                    numberGrade = 1.7;    
+                    
+                }else if (letterGrade.substring(1).equals("+")){
+                    numberGrade = 2.3;
+                    
+                }else{
+                    invalidGrade = true;
+                    
+                }
+            }else if (letterGrade.length() > 2){
+                invalidGrade = true;
+                
             }else{
                 numberGrade = 2;
+                
             }
-        }
             
-
-    
-        
-        if (letterGrade.substring(0,1).equals("C")){
             
-        }
-        if (letterGrade.substring(0,1).equals("B")){
+        }else if (letterGrade.substring(0,1).equals("B")){
+            if (letterGrade.length() == 2){
+                if (letterGrade.substring(1).equals("-")){
+                    numberGrade = 2.7;
+                    
+                }else if (letterGrade.substring(1).equals("+")){
+                    numberGrade = 3.3;
+                    
+                }else{
+                    invalidGrade = true;
+                    
+                }
+            }else if (letterGrade.length() > 2){
+                invalidGrade = true;
+                
+            }else{
+                numberGrade = 3;
+                
+            }
+         
             
-        
-        }
-        
-        if (letterGrade.substring(0,1).equals("A")){
-           
+        }else if (letterGrade.substring(0,1).equals("A")){
+            if (letterGrade.length() == 2){
+                if (letterGrade.substring(1).equals("-")){
+                    numberGrade = 3.4;
+                    
+                }else if (letterGrade.substring(1).equals("+")){
+                    numberGrade = 4;
+                    
+                }else{
+                    invalidGrade = true;
+                    
+                }
+            }else if (letterGrade.length() > 2){
+                invalidGrade = true;
+                
+            }else{
+                numberGrade = 3.7;
+                
+            }
         }else{
-            invalidGrade = "invalid";
-            // use for comparison 
+            invalidGrade = true;
         }
+      
         
-        // if "invalid" is assigned to the variable, print out that the grade is invalid. 
-        // Otherwise, the grade is valid and will print out the equivalent       
+        // if grade entered is invalid, print out that the grade is invalid. 
+        // Otherwise, the grade is valid and will print out the number equivalent       
         
-        if (invalidGrade.equals("invalid")){
-            System.out.println("This grade is " + invalidGrade);
+        if (invalidGrade == true){
+            System.out.println("This grade is invalid");
         
         }else{
             
-        System.out.println("The number grade equivalent is " + numberGrade);
+            System.out.println("The number grade equivalent is " + numberGrade);
         }
     }
 }
-}
+
 
 
 
