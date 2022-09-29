@@ -55,8 +55,7 @@ public class StupidCar
         // .equals() does not like dereferenced chars (chars that are taken from an already-referenced/established string)
         System.out.println("Input: " +doorL+doorR+childLock+masterUnlock+innerL+innerR+outerL+outerR+gear);;
         System.out.println();
-        System.out.println(doorL);
-        System.out.println(doorR);
+        
         
         if (masterUnlock == 1 && gear.equals("P")){
             System.out.println("The master unlock is activated.");

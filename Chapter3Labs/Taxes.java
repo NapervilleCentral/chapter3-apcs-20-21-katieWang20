@@ -16,7 +16,6 @@ public class Taxes
     public static void main(String args[]){
     double income;
     double tax = 0;
-    double previousTaxed = 0;
     Scanner input = new Scanner(System.in);
     System.out.println("Enter your annual income");
     income = input.nextDouble();
@@ -33,10 +32,13 @@ public class Taxes
         
     }else if (income > 100000 && income <=250000){
         tax = (income - 100000) * 0.04 + (50000 * 0.01) + (75000 - 50000)*0.02 + (100000 - 75000) * 0.03;
+        //                                                                         this taxes third range
     }else if (income > 250000 && income <=500000){
         tax = (income - 250000) * 0.05 + (50000 * 0.01) + (75000 - 50000)*0.02 + (100000 - 75000) * 0.03 + (250000 - 100000) * 0.04;
+    //                                                                                                      this taxes fourth range                                   
     }else if (income > 500000){
         tax = (income - 500000) * 0.06 + (50000 * 0.01) + (75000 - 50000)*0.02 + (100000 - 75000) * 0.03 + (250000 - 100000) * 0.04 + (500000 - 250000) * 0.05;
+    //                                                                                                                                  this taxes fifth range                         
     }
     
     System.out.printf("You have to pay $%.2f \n", tax);
