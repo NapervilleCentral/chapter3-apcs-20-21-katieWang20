@@ -66,16 +66,16 @@ public class Triangle
           if (sideA < 0 || sideB < 0 || sideC < 0){
               System.out.println("Sides should not be negative.");
           }else if (sideA + sideB < sideC || sideA + sideC < sideB || sideB + sideC < sideA){ // Two sides added together HAVE to be greater than or equal to the other side. 
-              System.out.println("Error, this triangle is not possible.");  
+              System.out.println("This triangle is not possible.");  
           
               
-          }else if (sideA == sideB & sideA == sideC){
+          }else if (sideA == sideB && sideA == sideC){
               System.out.println("The triangle is equalateral");
         
           
     
           }else if (sideA == sideB && sideA !=sideC || sideA == sideC && sideA != sideB || sideB == sideC && sideB !=sideA) {
-              System.out.println("The triangle is iscosoliese");
+              System.out.println("The triangle is iscosoles");
               // can't spell
           }else if (intHyp == rightTriangleHyp){
               // if the square root of the two sides squared has decimals (that are not 0), then rightTriangleHyp would keep it while intHyp would still be a whole intiger number

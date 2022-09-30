@@ -21,61 +21,76 @@ public class WeightOnPlanet
         Scanner input = new Scanner(System.in);
         int weightOnEarth;
         double weightOnOther = 0;
-        String planetChoice;
+        int planetChoice;
+        String planet = "";
+ 
         
+        
+        System.out.println("1. Mercury\n2. Venus\n3. Earth\n4. Mars\n5. Jupiter\n6. Saturn\n7. Uranus\n8. Neptune\n9. Pluto");
+
+        System.out.print("Choose a planet by number: ");
+        planetChoice = input.nextInt(); 
         
         System.out.println("Enter your weight on earth (pounds): ");
         weightOnEarth = input.nextInt();
         input.nextLine(); // skips over getting input from planetChoice = input.nextLine(); 
         // if this input.nextLine(); is not placed before it
         
-        System.out.print("Name a planet: ");
-        planetChoice = input.nextLine(); 
-        
+                
         switch(planetChoice){
             // weightOnOther = the weight on earth multiplied by the proportion
             //needed to calculate how much you weigh on another planet
-            case "Mercury":
+            case 1:
                 weightOnOther = weightOnEarth * 0.38;
+                planet = "Mercury";
                 break;
+                //mercury
             
-            case "Venus":
+            case 2:
                 weightOnOther = weightOnEarth *   0.91;
+                planet = "Venus";
                 break;
                 //stop cascading calcaulations
                 
-            case "Earth":
+            case 3:
                 weightOnOther = weightOnEarth * 1;
+                planet = "Earth";
                 break;
                 
-            case "Mars":
+            case 4:
                 weightOnOther = weightOnEarth * 0.38;
+                planet = "Mars";
                 break;
                 
-            case "Jupiter":
+            case 5:
                 weightOnOther = weightOnEarth * 2.34;
+                planet = "Jupiter";
                 break;
             
-            case "Saturn:":
+            case 6:
                 weightOnOther = weightOnEarth * 1.06;
+                planet = "Saturn";
                 break;
                 
-            case "Uranus":
+            case 7:
                 weightOnOther = weightOnEarth * 0.92;
+                planet = "Uranus";
                 break;
                 
-            case "Neptune":
+            case 8:
                 weightOnOther = weightOnEarth * 1.19;
+                planet = "Neptune";
                 break;
                 
-            case "Pluto":
+            case 9:
                 weightOnOther = weightOnEarth * 0.06;
-                // I don't care if Pluto is not a planet, it is still something that a person would put in because they think it is.
+                planet = "Pluto";
+                // Does not matter if it's not a planet. Tt is still something that a person would put in because they think it is.
         
         }
         
         
-        System.out.print("You weigh " + fmt.format(weightOnOther) + " pounds on " + planetChoice);
+        System.out.print("You weigh " + fmt.format(weightOnOther) + " pounds on " + planet);
     
     
     }
