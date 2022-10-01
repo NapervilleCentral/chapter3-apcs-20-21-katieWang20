@@ -12,13 +12,13 @@ public class test
   
         // Initializing Strings
         String str1 = "geeks";
-        String str2 = "Geeks";
+        String str2 = "4";
   
         // Checking if geeksforgeeks string
         // equates to geeksforgeeks string
         // case sensitive
         System.out.print(
-            "Difference of geeks and Geeks (case sensitive) : ");
+            "Difference of geeks and 4 (case sensitive) : ");
         System.out.println(str2.compareTo(str1));
   
         // Checking if geeksforgeeks string
