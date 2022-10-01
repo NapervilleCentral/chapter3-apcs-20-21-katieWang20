@@ -79,7 +79,7 @@ public class LetterToNumberGrade
                 
             }else{
                 
-                numberGrade = 2;
+                numberGrade = 1;
                 
             }
       
