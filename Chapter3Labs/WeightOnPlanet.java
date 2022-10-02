@@ -89,9 +89,12 @@ public class WeightOnPlanet
         
         }
         
-        
-        System.out.print("You weigh " + fmt.format(weightOnOther) + " pounds on " + planet);
-    
+        if (weightOnOther == 0){
+            System.out.println("oops your finger slipped (you chose an invalid planet number)");
+        }else{
+            
+            System.out.print("You weigh " + fmt.format(weightOnOther) + " pounds on " + planet);
+        }
     
     }
 }

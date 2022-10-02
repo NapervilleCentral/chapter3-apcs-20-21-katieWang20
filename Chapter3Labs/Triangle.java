@@ -1,11 +1,11 @@
 
 /**
  * Katie Wang
+ * Triangle program
  * 9/24/22
  * 
- * Triangle class
  * This program lets the user choose if they want to use side lengths or angles to figure out what the triangle is
- * The triangle is either determined as right, isosceles, or equilateral
+ * The triangle is either determined as right, isosceles, equilateral, or scalene
  */
 import java.util.Scanner;
 
@@ -73,8 +73,8 @@ public class Triangle
               System.out.println("The triangle is equalateral");
         
           
-    
-          }else if (sideA == sideB && sideA !=sideC || sideA == sideC && sideA != sideB || sideB == sideC && sideB !=sideA) {
+            
+          }else if (sideA == sideB || sideA == sideC || sideB == sideC) {
               System.out.println("The triangle is iscosoles");
               // can't spell
           }else if (intHyp == rightTriangleHyp){
@@ -117,7 +117,7 @@ public class Triangle
           }else if (angleA == angleB && angleA == angleC){ // if the first angle equals the second and the third angle, then the triangle is equilateral
               System.out.println("The triangle is equilateral");
               
-          }else if (angleA == angleB && angleA !=angleC || angleA == angleC && angleA != angleB || angleB == angleC && angleB != angleA){ 
+          }else if (angleA == angleB || angleA == angleC || angleB == angleC){ 
               //if one angle equals another angle but not the last angle, then the triangle is iscosoles.
               System.out.println("The triangle is iscosoles");
               

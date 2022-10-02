@@ -1,12 +1,14 @@
 
 /**
- * Write a description of class Taxes here.
- *
- * @author (your name)
- * @version (a version number or a date)
- * Thanks to my dad for teaching me about taxes
- * Though I will probably forget
  * 
+ * Katie Wang
+ * 9/28/22
+ * Taxes program
+ * 
+ * Calculates how much tax a person would pay in the 1913s
+ * 
+ * 
+ * Thanks to my dad for teaching me about taxes
  */
 
 import java.util.Scanner;

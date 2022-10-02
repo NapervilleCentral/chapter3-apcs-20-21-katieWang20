@@ -2,8 +2,8 @@
 /**
  * Katie Wang
  * 9/23/22
+ * Letter to number grade converter program
  * 
- * Letter to number grade converter
  * converts letters to number grade ranging from 0-4
  * 0.3 is subtracted if a grade has a minus sign
  * 0.3 is added if grade has a plus sign

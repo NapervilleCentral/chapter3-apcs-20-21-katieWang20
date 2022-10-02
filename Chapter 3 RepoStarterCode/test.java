@@ -9,7 +9,7 @@ public class test
 {
    
     public static void main(String args[]){
-  
+  /*
         // Initializing Strings
         String str1 = "geeks";
         String str2 = "4";
@@ -28,6 +28,16 @@ public class test
         System.out.print(
             "Difference of geeks and gEEkS (case insensitive) : ");
         System.out.println(str1.compareToIgnoreCase(str2));
+        **/
+        int a = 1;
+        int b = 3;
+        
+        if (a == b)
+            System.out.println ("Yes.");
+            
+        else
+            a = 3;
+            
     }
 }
 
