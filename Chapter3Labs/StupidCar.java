@@ -60,7 +60,9 @@ public class StupidCar
             System.out.println("The master unlock is activated.");
             if (childLock == 1)
                 System.out.println("Child lock activated");
-                
+            // if childlock is on but only the inner handle on one side is activated, then it cannot open. 
+            // otherwise if any of the other handles are activated on one side then it can open 
+            
             if (childLock == 1 && innerL == 1 && outerL == 0 && dashboardL == 0
             || childLock == 1 && innerL == 0 && outerL == 0 && dashboardL == 0){
                 System.out.println("Left door is closed");
