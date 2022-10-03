@@ -63,8 +63,8 @@ public class Triangle
           //converts rightTriangleTest to integer to use to compare. 
           
           
-          if (sideA < 0 || sideB < 0 || sideC < 0){
-              System.out.println("Sides should not be negative.");
+          if (sideA <= 0 || sideB <= 0 || sideC <= 0){
+              System.out.println("Sides should not be zero or negative.");
           }else if (sideA + sideB < sideC || sideA + sideC < sideB || sideB + sideC < sideA){ // Two sides added together HAVE to be greater than or equal to the other side. 
               System.out.println("This triangle is not possible.");  
           
@@ -106,9 +106,9 @@ public class Triangle
           
           // if the three angles do not add up to 180, then it can not be a triangle. if one of the sides is 0 degrees, it can not be a triangle. 
           // it is not possiblew for a triangle to have 0 degreess.
-          if (angleA < 0 || angleB < 0 || angleC < 0){
-              System.out.println("Angles should not be negative.");
-          }else if (angleA + angleB + angleC != 180 || angleA == 0 || angleB == 0 || angleC == 0){
+          if (angleA <= 0 || angleB <= 0 || angleC <= 0){
+              System.out.println("Angles should not be zero or negative.");
+          }else if (angleA + angleB + angleC != 180){
               System.out.println("The total angles do not equal 180. This triangle is not possible.");
           
           }else if (angleA == 90 || angleB == 90 || angleC == 90){ // if any of the angles are 90 degrees, then it is automatically a right triangle 

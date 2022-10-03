@@ -51,6 +51,7 @@ public class StupidCar
         
         System.out.println("Input: " +dashboardL+dashboardR+childLock+masterUnlock+innerL+innerR+outerL+outerR+gear);;
         System.out.println();
+        //checks if childlock is on and masterunlock is off. Car cannot open if child lock is activated
         
         if (childLock == 1 && masterUnlock == 0){
             System.out.println("childlock on. Both doors are closed.");
@@ -59,6 +60,7 @@ public class StupidCar
             System.out.println("The master unlock is activated.");
             if (childLock == 1)
                 System.out.println("Child lock activated");
+                
             if (childLock == 1 && innerL == 1 && outerL == 0 && dashboardL == 0
             || childLock == 1 && innerL == 0 && outerL == 0 && dashboardL == 0){
                 System.out.println("Left door is closed");
