@@ -39,8 +39,36 @@ public class find2020
        while(scanFile.hasNext())
        {
            int number = scanFile.nextInt();
-           System.out.println(number);
-           //String junk = keyboard.nextLine();
+           int number2 = scanFile.nextInt();
+           
+           int total = number + number2;
+           
+           if (total == 2020){
+               System.out.println(number + " " + number2);
+               
+               System.out.println(number*number2);
+            
+           }else{
+                ;
+            }
+           
+           
+           //int num1 = 0;
+           //int num2 = 0;
+           
+           //num1 = number;
+           
+           
+           
+           //System.out.println(number);
+           
+           
+           
+           
+           //String junk = scanFile.nextLine();
+           
+           
+           
            
        }
     }//end of main
