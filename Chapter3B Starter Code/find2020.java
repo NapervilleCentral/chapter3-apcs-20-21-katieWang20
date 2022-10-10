@@ -31,7 +31,7 @@ public class find2020
 {
 
      public static void main (String [] args) throws IOException // required for File IO
-   {
+     {
        Scanner keyboard = new Scanner(System.in);
        Scanner scanFile = new Scanner(new File("mistery2020.txt"));
         
@@ -39,8 +39,39 @@ public class find2020
        while(scanFile.hasNext())
        {
            int number = scanFile.nextInt();
-           System.out.println(number);
-           //String junk = keyboard.nextLine();
+           int number2 = scanFile.nextInt();
+           int count;
+           int count2;
+           int total;
+           for (count = 1; count < 1000; count++){
+               for (count2 = 1; count2 < 1000; count2++){
+                   total = scanFile[count] + junk[count2];
+                   if (total == 2020){
+                       System.out.println(number + "+" + number2);
+               
+                       System.out.println(number*number2);
+            
+                   }else{
+                        System.out.println("poo");
+               }
+           }
+        }
+           //int num1 = 0;
+           //int num2 = 0;
+           
+           //num1 = number;
+           
+           
+           
+           //System.out.println(number);
+           
+           
+           
+           
+           //String junk = scanFile.nextLine();
+           
+           
+           
            
        }
     }//end of main
