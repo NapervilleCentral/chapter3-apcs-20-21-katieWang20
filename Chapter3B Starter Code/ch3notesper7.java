@@ -23,7 +23,8 @@ public class ch3notesper7
 
    public static void main (String [] args) throws IOException // required for File IO
    {
-	   //enum whatever{1,3,5,7,9}must be declared outside of main
+       //enum whatever{1,3,5,7,9}must be declared outside of main
+       /*
        Scanner Keyboard = new Scanner(System.in);
        DecimalFormat fmt = new DecimalFormat ("0.###");
        Integer two = 2;
@@ -50,12 +51,12 @@ public class ch3notesper7
      int num, total = 0;
      for(int i = 0; i< 5;i++)
      {
-     	System.out.print("Enter a number");
-     	number = Keyboard.next();// "5"
-     	num = Integer.parseInt(number);//converts "5" to digit 5
-     	total += num;
- 	 }
- 	 System.out.println(total);
+         System.out.print("Enter a number");
+         number = Keyboard.next();// "5"
+         num = Integer.parseInt(number);//converts "5" to digit 5
+         total += num;
+      }
+      System.out.println(total);
 
 
     /*
@@ -131,7 +132,7 @@ C:\Users\khayes\Desktop\Classrooms\APCS 2021\chapter3-apcs-20-21-kevinthayes\Cha
         //System.out.println(word);
 
         if (word.equals("ISIS"))
-        	total ++;
+            total ++;
 
     }
     System.out.println("ISIS was said "+total);
@@ -172,20 +173,26 @@ C:\Users\khayes\Desktop\Classrooms\APCS 2021\chapter3-apcs-20-21-kevinthayes\Cha
 
 
 //_______________________basic for and scope of i________________________
-/*
-        //ini
-        //middle
-        //body
-        //last
-        // ini          test     inc
-    for(int i = 0 ; i<10 ;i++  )// for( ; ; ) is a valid loop
+
+        // step 1a. ini - only happens once
+        // step 1b. middle - condition that results true/false
+        //2. body - executes  code
+        //3. last - 
+        // ini             test            inc
+*/  int i = 0, j = 10;
+    for(; i < j && j > 0 ;) // for( ; ; ) is a valid loop
     {
-
-        System.out.print("Hi" + i + "\n");
-
+        int k = 5;
+        //                     increase, then output i
+        //                     ouput j, and then decrease
+        System.out.print("Hi" + ++i + ", "+ j-- + "\n");
+        
     }
-
-    //System.out.print("After the Loop" + i + "\n");
+    // ++i increments first, and then outputs the value
+    // i ++ outputs the value first, then increments
+    // scope of i is only within the loop if it is only intitalized within header
+    // >v this creates error because of ^ 
+    // System.out.print("After the Loop" + i + "\n");
 
 /*
 
