@@ -34,7 +34,8 @@ public class find2020
      {
        Scanner keyboard = new Scanner(System.in);
        Scanner scanFile = new Scanner(new File("mistery2020.txt"));
-        
+       
+       String junk = scanFile.nextLine();
     
        while(scanFile.hasNext())
        {
@@ -43,9 +44,9 @@ public class find2020
            int count;
            int count2;
            int total;
-           for (count = 1; count < 1000; count++){
-               for (count2 = 1; count2 < 1000; count2++){
-                   total = scanFile[count] + junk[count2];
+           for (count = 0; count < 100; count++){
+               for (count2 = 1; count2 < 100; count2++){
+                   total = scanFile[count] + scanFile[count2];
                    if (total == 2020){
                        System.out.println(number + "+" + number2);
                
