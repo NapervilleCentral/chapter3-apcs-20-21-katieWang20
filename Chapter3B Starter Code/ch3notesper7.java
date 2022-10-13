@@ -19,31 +19,39 @@ public class ch3notesper7
     Integer one = 1;
     enum Classes  {CalculusAB, English, SpanishIII, Gym, Lunch, APCS, APush, Photo}
     enum Grades {A,B,C,D,F}
-    enum Week {Monday,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday}
-
+    enum Week {Monday,Tuesday,Wednesday,Thursday,Friday}
+    
    public static void main (String [] args) throws IOException // required for File IO
    {
        //enum whatever{1,3,5,7,9}must be declared outside of main
-       /*
+       
        Scanner Keyboard = new Scanner(System.in);
        DecimalFormat fmt = new DecimalFormat ("0.###");
        Integer two = 2;
-
+        
+       
        Grades mygrade = Grades.F;
        Grades yourgrade = Grades.A;
-
+    
        Week today = Week.Tuesday;
        Week realtoday = Week.Thursday;
        System.out.println( );
 
-
+       Week sad = Week.Monday;
+       Week happy = Week.Friday;
+       //System.out.println(happy.compareTo(sad));
+       //System.out.println(sad.compareTo(happy));
 
        System.out.println(yourgrade.compareTo( mygrade) );
        String[] people = {"Deepa", "Trevor", "Murugan", "Emy",
                           "Thomas", "Charlie",
                           "heinz doofenshmirtz", "Michael",
                           "NoOne", "Bueller","Justin","David"};
-
+                          
+    
+                        
+        
+                        /*
 
      // enter numbers until user enters Q
 
@@ -59,8 +67,9 @@ public class ch3notesper7
       System.out.println(total);
 
 
-    /*
-        System.out.println("You scedule is:");
+    */
+       /*
+       System.out.println("You scedule is:");
         // new for loop to use with iterators
         //foreach loop
         for (Classes period: Classes.values())
@@ -109,20 +118,28 @@ C:\Users\khayes\Desktop\Classrooms\APCS 2021\chapter3-apcs-20-21-kevinthayes\Cha
 /**/
     // Scanner file i/o defaults at the space
     //relative path, the Folder MUST BE IN THE SAME DIR AS THIS FILE
+    
+    //review file directories
+    
     Scanner scanFile = new Scanner(new File("speeches\\people.txt"));
     Scanner scanFile2 = new Scanner(new File("data/Debate12016.txt"));
-    /*
+    String data = scanFile.nextLine(); // reads the whole line
+    
     String name, address, phone;
-
-    while(scanFile.hasNext())
+    
+    //dox people 
+    
+    while(scanFile.hasNext()) // sees if file has another line
     {
-        name = scanFile.next();// up to the space, nextLine() reads until the \n
-        address = scanFile.next();
-        phone = scanFile.next();
-
+        name = scanFile.next();//  reads up to the space before address line
+        //nextLine() only reads until the \n
+        address = scanFile.next();// up to the space before the phone number
+        phone = scanFile.next();// up to the space before next line
+        System.out.println(data);
         System.out.println(name + "---"+ phone);
 
     }
+    
     /*
     String word;
     int total = 0;
@@ -179,15 +196,20 @@ C:\Users\khayes\Desktop\Classrooms\APCS 2021\chapter3-apcs-20-21-kevinthayes\Cha
         //2. body - executes  code
         //3. last - 
         // ini             test            inc
-*/  int i = 0, j = 10;
+*/
+
+/*  
+int i = 0, j = 10;
     for(; i < j && j > 0 ;) // for( ; ; ) is a valid loop
     {
         int k = 5;
+        // 
         //                     increase, then output i
         //                     ouput j, and then decrease
         System.out.print("Hi" + ++i + ", "+ j-- + "\n");
         
     }
+    
     // ++i increments first, and then outputs the value
     // i ++ outputs the value first, then increments
     // scope of i is only within the loop if it is only intitalized within header
@@ -220,9 +242,12 @@ C:\Users\khayes\Desktop\Classrooms\APCS 2021\chapter3-apcs-20-21-kevinthayes\Cha
     }
 
 
+*/
 
-/*  int i =0;//#1
-
+  /*
+   * 
+   int i =0;//#1
+        
         while (i<10)//#2
         {
             System.out.print( "i =" + i +"\n");
@@ -231,9 +256,30 @@ C:\Users\khayes\Desktop\Classrooms\APCS 2021\chapter3-apcs-20-21-kevinthayes\Cha
 
 
 
-
-
-/*  */
+    
+   
+   String number = "y";
+   int num, sum = 0;
+   
+   System.out.println("Enter a number: ");
+    number = Keyboard.next();
+       
+   while (!number.equals("q")){
+       // get parsed idiot
+       
+       num = Integer.parseInt(number);
+       sum += num;
+       System.out.println("Enter a number: ");
+       number = Keyboard.next();
+       
+       
+       //converts string to an int
+       // Double.parseDouble converts string to a double
+       
+        
+   }
+   System.out.println("Sum: " + sum);
+   */
 
    }// end of main
 
