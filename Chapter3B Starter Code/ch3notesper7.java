@@ -20,9 +20,9 @@ public class ch3notesper7
     enum Classes  {CalculusAB, English, SpanishIII, Gym, Lunch, APCS, APush, Photo}
     enum Grades {A,B,C,D,F}
     enum Week {Monday,Tuesday,Wednesday,Thursday,Friday}
-    
+    // enums have an order
    public static void main (String [] args) throws IOException // required for File IO
-   {
+   { 
        //enum whatever{1,3,5,7,9}must be declared outside of main
        
        Scanner Keyboard = new Scanner(System.in);
@@ -42,7 +42,7 @@ public class ch3notesper7
        //System.out.println(happy.compareTo(sad));
        //System.out.println(sad.compareTo(happy));
 
-       System.out.println(yourgrade.compareTo( mygrade) );
+       //System.out.println(yourgrade.compareTo( mygrade) );
        String[] people = {"Deepa", "Trevor", "Murugan", "Emy",
                           "Thomas", "Charlie",
                           "heinz doofenshmirtz", "Michael",
@@ -51,10 +51,10 @@ public class ch3notesper7
     
                         
         
-                        /*
+                        
 
      // enter numbers until user enters Q
-
+/*
      String number;
      int num, total = 0;
      for(int i = 0; i< 5;i++)
@@ -67,8 +67,8 @@ public class ch3notesper7
       System.out.println(total);
 
 
-    */
-       /*
+    
+       
        System.out.println("You scedule is:");
         // new for loop to use with iterators
         //foreach loop
@@ -120,11 +120,14 @@ C:\Users\khayes\Desktop\Classrooms\APCS 2021\chapter3-apcs-20-21-kevinthayes\Cha
     //relative path, the Folder MUST BE IN THE SAME DIR AS THIS FILE
     
     //review file directories
+    // double click -- > \\
     
     Scanner scanFile = new Scanner(new File("speeches\\people.txt"));
+    // version 9 -- use single slash
+    
     Scanner scanFile2 = new Scanner(new File("data/Debate12016.txt"));
     String data = scanFile.nextLine(); // reads the whole line
-    
+    /*
     String name, address, phone;
     
     //dox people 
@@ -132,6 +135,7 @@ C:\Users\khayes\Desktop\Classrooms\APCS 2021\chapter3-apcs-20-21-kevinthayes\Cha
     while(scanFile.hasNext()) // sees if file has another line
     {
         name = scanFile.next();//  reads up to the space before address line
+        
         //nextLine() only reads until the \n
         address = scanFile.next();// up to the space before the phone number
         phone = scanFile.next();// up to the space before next line
@@ -140,20 +144,23 @@ C:\Users\khayes\Desktop\Classrooms\APCS 2021\chapter3-apcs-20-21-kevinthayes\Cha
 
     }
     
-    /*
+    
+   */
     String word;
     int total = 0;
+    int total2 = 0;
      while(scanFile2.hasNext())//hasNext until no more tokens
     {
         word = scanFile2.next();
         //System.out.println(word);
 
-        if (word.equals("ISIS"))
+        if (word.equalsIgnoreCase("Donald") || word.equalsIgnoreCase("Donald,") || word.equalsIgnoreCase("Donald.") || word.equalsIgnoreCase("Donald?"))
             total ++;
-
+        else if (word.equalsIgnoreCase("Trump") || word.equalsIgnoreCase("Trump,") || word.equalsIgnoreCase("Trump.") || word.equalsIgnoreCase("Trump?"))
+            total2 ++;
     }
-    System.out.println("ISIS was said "+total);
-
+    System.out.println("Donald was said "+total);
+    System.out.println("Trump : " +total2);
 
 
 

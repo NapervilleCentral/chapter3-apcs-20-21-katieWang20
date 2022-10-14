@@ -36,27 +36,27 @@ public class find2020
        Scanner scanFile = new Scanner(new File("mistery2020.txt"));
        
        String junk = scanFile.nextLine();
+       
     
        while(scanFile.hasNext())
        {
-           int number = scanFile.nextInt();
-           int number2 = scanFile.nextInt();
-           int count;
-           int count2;
-           int total;
-           for (count = 0; count < 100; count++){
-               for (count2 = 1; count2 < 100; count2++){
-                   total = scanFile[count] + scanFile[count2];
-                   if (total == 2020){
-                       System.out.println(number + "+" + number2);
+           int number1 = scanFile.nextInt();
+           if (scanFile.hasNext()){
+               int number2 = scanFile.nextInt();
+               int total = number1 + number2;
+               System.out.println(number1+ "+"+ number2 +" " + total);
+               if (total == 2020){
+                   System.out.println("multipliued = " + number1 * number2);
+               }    
                
-                       System.out.println(number*number2);
-            
-                   }else{
-                        System.out.println("poo");
-               }
            }
-        }
+           
+                
+           
+       }
+       
+       //junk = scanFile.nextLine();
+       
            //int num1 = 0;
            //int num2 = 0;
            
@@ -74,6 +74,6 @@ public class find2020
            
            
            
-       }
+       
     }//end of main
 }//end of class
