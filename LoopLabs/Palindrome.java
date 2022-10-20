@@ -10,33 +10,47 @@ import java.util.Scanner;
 
 public class Palindrome
 {
-    // instance variables - replace the example below with your own
+    
     public static void main (String[] args){
         Scanner input = new Scanner(System.in);
     
-        System.out.println("Enter ONE word: ");
+        System.out.println("Enter a string: ");
         String word = input.nextLine();
-        
+        char leftLetter;
+        char rightLetter;
         int lengthOfString = word.length();
-        
-        for (int i = 0; i < lengthOfString; i ++){
+        boolean palindrome = false;
+        for (int i = 0; i < lengthOfString; i++, lengthOfString--){
             
             //System.out.println(word.charAt(i) + "   " + word.charAt((lengthOfString - 1) - i));
-            char compare1 = word.charAt(i);
-            char compare2 = word.charAt((lengthOfString - 1) - i);
             
-            if (compare1 == compare2){
-                System.out.println(compare1 + "   " + compare2);
-                    
+            
+            leftLetter = word.charAt(i);
+            rightLetter = word.charAt((lengthOfString - 1));
+            
+            if (leftLetter != rightLetter){
+                palindrome = false;
+                i = lengthOfString + 1;
+            }else{
+                palindrome = true;
             }
+         
+            
+        
+            
+            // index the first letter and last letter
+            // compare the first letter and last letter
+            // if true, then compare the second letter and second last letter.
+            // etc... use index 
+            // use i as index
+        
         }
-        
-        // index the first letter and last letter
-        // compare the first letter and last letter
-        // if true, then compare the second letter and second last letter.
-        // etc... use index 
-        // use counters as index
-        
+        System.out.println(palindrome);
+        if (palindrome == true){
+                System.out.println(word + " is a palindrome");
+        }else {
+                System.out.println(word + " is not a palindrome");
+        }
     
     }
     
