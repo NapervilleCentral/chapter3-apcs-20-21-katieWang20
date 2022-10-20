@@ -93,17 +93,7 @@ public class MontyHall
                         
                 }
             }
-                    
-                
-            
-           
-            
-            
-                
-        
-            
-            
-        
+ 
         }
         
           System.out.println(strategy1Count + "   " + strategy2Count);
