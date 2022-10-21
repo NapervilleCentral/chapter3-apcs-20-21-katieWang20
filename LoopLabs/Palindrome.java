@@ -28,6 +28,34 @@ public class Palindrome
             leftLetter = word.charAt(i);
             rightLetter = word.charAt((lengthOfString - 1));
             
+            while (leftLetter == ' '){
+                int leftIndex = word.indexOf(leftLetter);
+                
+                word = word.substring(0, leftIndex) + "" + word.substring(leftIndex); 
+                leftIndex = word.indexOf(leftLetter + 1);
+                leftLetter = leftIndex;
+            }
+            System.out.println(word);
+            /*
+            while (leftLetter == ' '){
+                System.out.println(leftLetter);
+                leftLetter = word.charAt(i + 1);
+                System.out.println(leftLetter);
+                
+            }
+            */
+           
+            /*
+            while (rightLetter == ' '){
+                rightLetter = word.charAt((lengthOfString - 1)-1);
+                System.out.println(rightLetter);
+                rightLetter = word.charAt((lengthOfString - 1)-1);
+            }
+            */
+           
+         
+            
+           
             if (leftLetter != rightLetter){
                 palindrome = false;
                 i = lengthOfString + 1;
