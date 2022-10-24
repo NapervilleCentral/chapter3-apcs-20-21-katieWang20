@@ -14,11 +14,20 @@ public class FourLeafRose
 {
    public static void main (String[] args){
         StandardPen pen = new StandardPen();
-        Shapes shape = new Shapes();
+        //Shapes shape = new Shapes();
         
         Color newColor = new Color(128, 0, 128);
         
-        shape.drawLine(30.0, 50.0, 50.0, 30.0);
-    
+        for (int z = 0; z < 29; z++){
+            
+            
+            pen.move(z*4);
+            pen.turn(90);
+            
+            
+            
+        
+        }
+        
    }
 }
