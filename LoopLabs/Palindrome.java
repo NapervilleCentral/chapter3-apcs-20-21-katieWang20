@@ -20,57 +20,47 @@ public class Palindrome
         char rightLetter;
         int lengthOfString = word.length();
         boolean palindrome = false;
+        String word2 = word;
+        for (int i = 0; i < lengthOfString;i++){
+       
+            
+            leftLetter = word2.charAt(i);
+                
+                //int leftIndex = word.indexOf(leftLetter);
+                //System.out.println(leftLetter);
+            if (leftLetter == ' '){
+                word2 = word2.substring(0, i) + "" + word2.substring(i+1); 
+                
+            }
+            //System.out.println(word2);
+            lengthOfString = word2.length();
+            // update word length since it becomes shorter when space is removed
+                
+                
+        
+        
+        }
+
         for (int i = 0; i < lengthOfString; i++, lengthOfString--){
             
             //System.out.println(word.charAt(i) + "   " + word.charAt((lengthOfString - 1) - i));
             
             
-            leftLetter = word.charAt(i);
-            rightLetter = word.charAt((lengthOfString - 1));
+            leftLetter = word2.charAt(i);
+            rightLetter = word2.charAt((lengthOfString - 1));
             
-            while (leftLetter == ' '){
-                int leftIndex = word.indexOf(leftLetter);
-                
-                word = word.substring(0, leftIndex) + "" + word.substring(leftIndex); 
-                leftIndex = word.indexOf(leftLetter + 1);
-                leftLetter = leftIndex;
-            }
-            System.out.println(word);
-            /*
-            while (leftLetter == ' '){
-                System.out.println(leftLetter);
-                leftLetter = word.charAt(i + 1);
-                System.out.println(leftLetter);
-                
-            }
-            */
-           
-            /*
-            while (rightLetter == ' '){
-                rightLetter = word.charAt((lengthOfString - 1)-1);
-                System.out.println(rightLetter);
-                rightLetter = word.charAt((lengthOfString - 1)-1);
-            }
-            */
-           
          
             
            
             if (leftLetter != rightLetter){
                 palindrome = false;
                 i = lengthOfString + 1;
+                // stops loop
             }else{
                 palindrome = true;
             }
          
             
-        
-            
-            // index the first letter and last letter
-            // compare the first letter and last letter
-            // if true, then compare the second letter and second last letter.
-            // etc... use index 
-            // use i as index
         
         }
         System.out.println(palindrome);
