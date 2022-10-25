@@ -1,9 +1,9 @@
 
 /**
- * Write a description of class Palindrome here.
- *
- * @author (your name)
- * @version (a version number or a date)
+ * Katie Wang
+ * 10/23/2022
+ * Palindrome lab
+ * ask user for a string and returns tells them if it is a palindrome or not
  */
 
 import java.util.Scanner;
@@ -20,28 +20,28 @@ public class Palindrome
         char rightLetter;
         int lengthOfString = word.length();
         boolean palindrome = false;
-        String word2 = word;
+        String editedWord = word;
         
         
         for (int i = 0; i < lengthOfString;i++){
             
-            leftLetter = word2.charAt(i);
+            leftLetter = editedWord.charAt(i);
             // detects spaces in sentence and replaces it with nothing so it's 1 word
 
             if (leftLetter == ' '){
-                word2 = word2.substring(0, i) + "" + word2.substring(i+1); 
+                editedWord = editedWord.substring(0, i) + "" + editedWord.substring(i+1); 
             }
            
-            lengthOfString = word2.length();
+            lengthOfString = editedWord.length();
             // update word length since it becomes shorter when space is removed
         }
         
-        word2 = word2.toLowerCase();
+        editedWord = editedWord.toLowerCase();
         
         for (int i = 0; i < lengthOfString; i++, lengthOfString--){
             
-            leftLetter = word2.charAt(i);
-            rightLetter = word2.charAt((lengthOfString - 1));
+            leftLetter = editedWord.charAt(i);
+            rightLetter = editedWord.charAt((lengthOfString - 1));
             
             // checks if the letters on left side to right side are equal
             if (leftLetter != rightLetter){

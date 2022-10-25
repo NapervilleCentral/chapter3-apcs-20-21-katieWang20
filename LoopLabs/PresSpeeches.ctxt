@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.target=PresSpeeches
+comment0.text=\r\n\ they\ would\ like\ you\ to\ analyze\ a\ set\ of\ \r\ninauguration\ addresses\ made\ by\ US\ presidents\ and\ calculate\ the\ average\ length\ of\ each\ word\ in\ a\ speech,\ as\ well\ as\ the\ \r\ntotal\ number\ of\ words.\ Write\ a\ program\ which\ reads\ through\ a\ speech\ (do\ not\ write\ code\ for\ each\ speech)\ stored\ in\ a\ \r\ntext\ file\ (examples\ provided\ )\ and\ calculate\ this\ information.\ \r\n\ \ \ \r\n
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+numComments=2
