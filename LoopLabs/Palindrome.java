@@ -3,7 +3,7 @@
  * Katie Wang
  * 10/23/2022
  * Palindrome lab
- * ask user for a string and returns tells them if it is a palindrome or not
+ * ask user for a string and  tells them if it is a palindrome or not
  */
 
 import java.util.Scanner;

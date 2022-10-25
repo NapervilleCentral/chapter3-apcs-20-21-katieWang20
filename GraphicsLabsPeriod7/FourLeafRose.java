@@ -20,12 +20,10 @@ public class FourLeafRose
         
         for (int z = 0; z < 29; z++){
             
-            
             pen.move(z*4);
             pen.turn(90);
             
-            
-            
+        
         
         }
         
