@@ -10,7 +10,7 @@ import TurtleGraphics.StandardPen;
 import TurtleGraphics.*;
 import java.awt.*;
 
-public class FourLeafRose
+public class Spiral
 {
    public static void main (String[] args){
         StandardPen pen = new StandardPen();

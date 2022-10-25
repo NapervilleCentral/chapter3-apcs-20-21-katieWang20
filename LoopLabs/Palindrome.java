@@ -19,7 +19,7 @@ public class Palindrome
         char leftLetter;
         char rightLetter;
         int lengthOfString = word.length();
-        boolean palindrome = false;
+        boolean palindrome = true;
         String editedWord = word;
         
         
@@ -46,10 +46,8 @@ public class Palindrome
             // checks if the letters on left side to right side are equal
             if (leftLetter != rightLetter){
                 palindrome = false;
-                i = lengthOfString + 1;
-                // stops loop once letters are not equal
-            }else{
-                palindrome = true;
+                
+                // stays as false
             }
          
         }
