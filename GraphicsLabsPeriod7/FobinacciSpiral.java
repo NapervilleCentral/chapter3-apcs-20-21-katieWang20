@@ -25,7 +25,7 @@ public class FobinacciSpiral
         int prod = 0;
         
         //System.out.println("Enter the max number of Fibonacci numbers you want: ");
-        int maxNum = 3;//input.nextInt();
+        int maxNum = 10;//input.nextInt();
         
         
         
@@ -45,51 +45,42 @@ public class FobinacciSpiral
         }else{
             System.out.println(prevNum1);
             System.out.println(prevNum2);
-            for (int count = 1; count <= maxNum-2; count ++){
+            for (int count = 1; count <= maxNum; count ++){
             
                 prod = prevNum1 + prevNum2;
                 //System.out.println(prevNum1);    
                 //System.out.println(prevNum2); 
                 System.out.println(prod);
                 
-            
-                
-                
                 
                 
                 for (int sides = 1; sides <=5; sides++){
-                    
                     pen.move(10 * prevNum1);
                     pen.turn(90);
+                
                 }
-                //pen.move(10 * prevNum1);
-                
-                
-                
+                pen.move(10 * prevNum1);
+                pen.move(10 * prevNum2);
                 for (int sides = 1; sides <=5; sides++){
                     pen.move(10 * prevNum2);
                     pen.turn(90);
-                    
-                    
-                    
+                
                 }
+                pen.move(10 * prevNum2);
                 pen.move(10 * prod);
                 
-                //pen.move(10 * prod);
-               
                 for (int sides = 1; sides <=5; sides++){
-                    pen.move(10 * prod);
                     pen.turn(90);
-                    
-                    
+                    pen.move(10 * prod);
+                
                 }
-                pen.move(10 * prod);
-                //pen.move(10 * prod);
+            
                 pen.move(10 * prod);
                 prevNum1 = prevNum2;
                 prevNum2 = prod;
-                 
-            
+                
+                
+                pen.move(prevNum2);
             
             }
         }
