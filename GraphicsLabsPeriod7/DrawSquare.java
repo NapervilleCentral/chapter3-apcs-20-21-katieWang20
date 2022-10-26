@@ -21,11 +21,11 @@ public class DrawSquare
         pen.setColor(Color.red);
         pen.turn(90);
         pen.move(50);
-        pen.turn(-90);
+       /* pen.turn(-90);
         pen.move(100);
         pen.setColor(newColor);
         pen.turn(90);
         pen.move(1000);
-        
+        */
     }
 }

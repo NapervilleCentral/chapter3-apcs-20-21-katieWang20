@@ -23,7 +23,7 @@ public class PresSpeeches
 {
     public static void main(String[] args) throws IOException{
         //Scanner scanFile = new Scanner( new File("C:\\Users\\kwang3\\Desktop\\AP Computer Science\\chapter3-apcs-20-21-katieWang20\\Chapter3B Starter Code\\speeches\\jfk.txt"));
-        Scanner scanFile = new Scanner( new File("C:\\Users\\kwang3\\Desktop\\AP Computer Science\\chapter3-apcs-20-21-katieWang20\\Chapter3B Starter Code\\speeches\\tedroosevelt.txt"));
+        Scanner scanFile = new Scanner( new File("speeches/tedroosevelt.txt"));
 
         String word;
         int numOfLines = 0;
@@ -50,7 +50,7 @@ public class PresSpeeches
         }
         // try to get rid of delimiter setting by scanning again
         //Scanner scanFileAgain = new Scanner( new File("C:\\Users\\kwang3\\Desktop\\AP Computer Science\\chapter3-apcs-20-21-katieWang20\\Chapter3B Starter Code\\speeches\\jfk.txt"));
-        Scanner scanFileAgain = new Scanner( new File("C:\\Users\\kwang3\\Desktop\\AP Computer Science\\chapter3-apcs-20-21-katieWang20\\Chapter3B Starter Code\\speeches\\tedroosevelt.txt"));
+        Scanner scanFileAgain = new Scanner( new File("speeches/tedroosevelt.txt"));
 
         System.out.println("Enter a word to find");
         findWord = input.nextLine();

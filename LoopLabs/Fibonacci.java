@@ -34,14 +34,12 @@ public class Fibonacci
             for (int count = 1; count <= maxNum-2; count ++){
             
                 prod = prevNum1 + prevNum2;
-                //System.out.println(prevNum1);    
-                //System.out.println(prevNum2); 
+             
                 System.out.println(prod);
                 
             
                 prevNum1 = prevNum2;
                 prevNum2 = prod;
-                //prod = prevNum1 + prevNum2;
             
        
             
