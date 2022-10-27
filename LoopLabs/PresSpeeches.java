@@ -22,8 +22,8 @@ text file (examples provided ) and calculate this information.
 public class PresSpeeches
 {
     public static void main(String[] args) throws IOException{
-        //Scanner scanFile = new Scanner( new File("speeches/John Quincy Adams Inaugural.txt"));
-        Scanner scanFile = new Scanner( new File("speeches/tedroosevelt.txt"));
+        Scanner scanFile = new Scanner( new File("speeches/John_Quincy_Adams_Inaugural.txt"));
+        //Scanner scanFile = new Scanner( new File("speeches/tedroosevelt.txt"));
 
         String word;
         int numOfLines = 0;
@@ -36,15 +36,17 @@ public class PresSpeeches
     
        
         
-        scanFile.useDelimiter("\n");   
+        //scanFile.useDelimiter("\n");   
         
+
+   
         while (scanFile.hasNext()){
-            String next = scanFile.next();
+            String next = scanFile.nextLine();
             numOfLines +=1;
         }
         // try to get rid of delimiter setting by scanning again
-        //Scanner scanFileAgain = new Scanner (new File("John Quincy Adams Inaugural.txt"));
-        Scanner scanFileAgain = new Scanner( new File("speeches/tedroosevelt.txt"));
+        Scanner scanFileAgain = new Scanner (new File("John_Quincy_Adams_Inaugural.txt"));
+        //Scanner scanFileAgain = new Scanner( new File("speeches/tedroosevelt.txt"));
 
         System.out.println("Enter a word to find");
         findWord = input.nextLine();
@@ -53,8 +55,11 @@ public class PresSpeeches
         String firstLine;
         String secondLine;
         String totalText ="";
+        String date = scanFileAgain.nextLine();
+        String name = scanFileAgain.nextLine();
         
-        while (scanFileAgain.hasNext()){
+        while (scanFileAgain.hasNext()){ 
+            //does not count name and date 
             totalNumOfWords +=1; 
             word = scanFileAgain.next();
             totalText +=word + " ";
@@ -71,7 +76,8 @@ public class PresSpeeches
         }
         System.out.println(totalText);
         averageWordLength = sumOfLengths/totalNumOfWords;
-        System.out.println("First line: ");
+        System.out.println("First line: "+ date);
+        System.out.println("Second line: " + name);
         System.out.println("Total num of words: " + totalNumOfWords);
         System.out.println("Total numb of lines: " + numOfLines);
         System.out.println("average word length: " + averageWordLength);
