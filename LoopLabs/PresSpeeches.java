@@ -10,7 +10,7 @@ import java.util.Scanner;
 import javax.swing.*;
 import java.util.StringTokenizer;
 import java.io.*;
-
+import java.util.*;
 /**
  * they would like you to analyze a set of 
 inauguration addresses made by US presidents and calculate the average length of each word in a speech, as well as the 
@@ -22,7 +22,7 @@ text file (examples provided ) and calculate this information.
 public class PresSpeeches
 {
     public static void main(String[] args) throws IOException{
-        //Scanner scanFile = new Scanner( new File(speeches/jfk.txt"));
+        //Scanner scanFile = new Scanner( new File("speeches/John Quincy Adams Inaugural.txt"));
         Scanner scanFile = new Scanner( new File("speeches/tedroosevelt.txt"));
 
         String word;
@@ -43,32 +43,35 @@ public class PresSpeeches
             numOfLines +=1;
         }
         // try to get rid of delimiter setting by scanning again
-        //Scanner scanFileAgain = new Scanner (new File("speeches/jfk.txt"));
+        //Scanner scanFileAgain = new Scanner (new File("John Quincy Adams Inaugural.txt"));
         Scanner scanFileAgain = new Scanner( new File("speeches/tedroosevelt.txt"));
 
         System.out.println("Enter a word to find");
         findWord = input.nextLine();
         int findWordCount = 0;
         String file;
+        String firstLine;
+        String secondLine;
+        String totalText ="";
         
         while (scanFileAgain.hasNext()){
             totalNumOfWords +=1; 
             word = scanFileAgain.next();
-            
+            totalText +=word + " ";
             
             wordLength = word.length();
             sumOfLengths += wordLength;
             
-            System.out.println(word);
+            //System.out.println(word);
             if (word.equalsIgnoreCase(findWord) || word.equalsIgnoreCase(findWord+".") ||word.equalsIgnoreCase(findWord+",")){
                 findWordCount +=1;
-                System.out.println();
-                
+    
             }   
         
         }
-        
+        System.out.println(totalText);
         averageWordLength = sumOfLengths/totalNumOfWords;
+        System.out.println("First line: ");
         System.out.println("Total num of words: " + totalNumOfWords);
         System.out.println("Total numb of lines: " + numOfLines);
         System.out.println("average word length: " + averageWordLength);

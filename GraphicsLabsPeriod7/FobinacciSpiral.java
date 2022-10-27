@@ -25,7 +25,7 @@ public class FobinacciSpiral
         int prod = 0;
         
         //System.out.println("Enter the max number of Fibonacci numbers you want: ");
-        int maxNum = 2;//input.nextInt();
+        int maxNum = 10;//input.nextInt();
         
         
         
@@ -63,7 +63,7 @@ public class FobinacciSpiral
         prevNum2 = 1;
         prod = 0;
         //pen.penUp();
-        
+        pen.move(100);
         for (int count = 1; count <= maxNum; count ++){
             
                 prod = prevNum1 + prevNum2;
@@ -81,7 +81,7 @@ public class FobinacciSpiral
                 double x;
                 double y;
                
-                   
+                 /*  
                             
                         if (count % 4 == 1){
                             yCenter -=prevNum2;
@@ -103,13 +103,14 @@ public class FobinacciSpiral
                         }
                     
                         
-                    
-                for (theta = Math.PI/2; theta <= Math.PI;){
+                /*   
+                for (theta = 0; theta <= Math.PI;){
                     x = xCenter + r * Math.cos(theta);
-                        y = yCenter +  r * Math.sin(theta);
-                        pen.move(x*10, y*10);     
-                        theta += Math.PI/100;
-                        System.out.println("sdffsdfsd");
+                    y = yCenter +  r * Math.sin(theta);
+                    pen.move(x*10, y*10);     
+                    theta += Math.PI/100;
+                    System.out.println("DRAW");
+                    pen.turn(90);
                         
                 }     
                 
