@@ -19,14 +19,14 @@ public class Rose
         double x=0;
         double y=0;
         
-        //aPen.up();
+        
         //for (int count = 0; count <100; count++){
             for (int a = 0; theta < Math.PI* 2;a++){
                 
-                
+                    
                     
                 r = Math.cos(2 * theta);
-                x = r * Math.cos(theta);
+                x = r * Math.cos(theta)-1;
                 y = r * Math.sin(theta);
                 
                 aPen.turn(theta);

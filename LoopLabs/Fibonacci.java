@@ -23,20 +23,11 @@ public class Fibonacci
         System.out.println("Enter the max number of Fibonacci numbers you want: ");
         int maxNum = input.nextInt();
         
-        if (maxNum == 1){
-            System.out.println(prevNum1);
-        }else if (maxNum == 2){
-            System.out.println(prevNum1);
-            System.out.println(prevNum2);
-        }else{
-            System.out.println(prevNum1);
-            System.out.println(prevNum2);
-            for (int count = 1; count <= maxNum-2; count ++){
-            
-                prod = prevNum1 + prevNum2;
-             
-                System.out.println(prod);
+      
+        for (int count = 1; count <= maxNum; count ++){
+                System.out.println(prevNum1);
                 
+                prod = prevNum1 + prevNum2;
             
                 prevNum1 = prevNum2;
                 prevNum2 = prod;
@@ -46,7 +37,7 @@ public class Fibonacci
           
             
             
-            }
-    }
+            
+        }
     }
 }
