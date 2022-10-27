@@ -81,11 +81,10 @@ public class FobinacciSpiral
                 double x;
                 double y;
                
-                for (theta = Math.PI/2; theta <= Math.PI;){
-                        
+                   
                             
                         if (count % 4 == 1){
-                            yCenter +=prevNum2;
+                            yCenter -=prevNum2;
                             xCenter = xCenter;
                             
                             
@@ -103,15 +102,16 @@ public class FobinacciSpiral
                             ;
                         }
                     
-                        x = xCenter + r * Math.cos(theta);
+                        
+                    
+                for (theta = Math.PI/2; theta <= Math.PI;){
+                    x = xCenter + r * Math.cos(theta);
                         y = yCenter +  r * Math.sin(theta);
-                                
+                        pen.move(x*10, y*10);     
                         theta += Math.PI/100;
                         System.out.println("sdffsdfsd");
-                        pen.move(x*10, y*10);
-                    }
-                    
-                
+                        
+                }     
                 
                 
                 
