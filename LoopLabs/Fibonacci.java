@@ -32,11 +32,7 @@ public class Fibonacci
                 prevNum1 = prevNum2;
                 prevNum2 = prod;
             
-       
-            
-          
-            
-            
+
             
         }
     }

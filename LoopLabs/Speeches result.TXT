@@ -1,0 +1,61 @@
+First line: First Inaugural Address (April 30, 1789)
+Second line: George Washington
+Total num of words: 1430
+Total numb of lines: 1448
+average word length: 5
+
+nation is said 2 times.
+we is said 1 times.
+government is said 8 times.
+------------------------------------------------
+First line: Inaugural Address (March 4, 1825)
+Second line: John Quincy Adams
+Total num of words: 2962
+Total numb of lines: 2988
+average word length: 5
+
+nation is said 8 times.
+we is said 8 times.
+government is said 17 times.
+-----------------------------------------------
+First line: March 4 1905
+Second line: Theodore Roosevelt
+Total num of words: 986
+Total numb of lines: 993
+average word length: 4
+
+nation is said 5 times.
+we is said 32 times.
+government is said 1 times.
+-----------------------------------------------
+First line: 1909
+Second line: William Howard Taft
+Total num of words: 5428
+Total numb of lines: 5912
+average word length: 4
+
+nation is said 1 times.
+we is said 30 times.
+government is said 26 times.
+-----------------------------------------------
+First line: Address to the Nation Announcing Decision To Resign the Office of President (August 8, 1974)
+Second line: Richard Nixon
+Total num of words: 530
+Total numb of lines: 546
+average word length: 4
+
+nation is said 5 times.
+we is said 2 times.
+government is said 1 times.
+-----------------------------------------------
+First line: TOPIC: Our Past, Our Future & Vision for America
+Second line: June 14, 2006
+Total num of words: 3136
+Total numb of lines: 3294
+average word length: 4
+
+nation is said 4 times.
+we is said 58 times.
+government is said 9 times.
+
+
