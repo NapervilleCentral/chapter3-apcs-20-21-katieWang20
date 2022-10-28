@@ -83,8 +83,7 @@ public class PresSpeeches
             
             wordLength = word.length();
             sumOfLengths += wordLength;
-            
-            //System.out.println(word);
+    
             if (word.equalsIgnoreCase(findWord) || word.equalsIgnoreCase(findWord + ".") ||word.equalsIgnoreCase(findWord + ",")){
                 findWordCount +=1;
     
@@ -100,14 +99,16 @@ public class PresSpeeches
         
         
         }
-      
+        
         averageWordLength = sumOfLengths/totalNumOfWords;
+        
         System.out.println("First line: "+ line1);
         System.out.println("Second line: " + line2);
         System.out.println("Total num of words: " + totalNumOfWords);
         System.out.println("Total numb of lines: " + numOfLines);
         System.out.println("average word length: " + averageWordLength);
         System.out.println();
+        
         System.out.println(findWord + " is said " + findWordCount + " times.");
         System.out.println(findWord2 + " is said " + findWordCount2 + " times.");
         System.out.println(findWord3 + " is said " + findWordCount3 + " times.");
