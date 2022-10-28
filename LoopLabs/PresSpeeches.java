@@ -1,9 +1,10 @@
 
 /**
- * Write a description of class PresSpeeches here.
- *
- * @author (your name)
- * @version (a version number or a date)
+ * Katie Wang
+ * 10/26/2022
+ * US President speeches lab
+ * This program anyalizes speeches of president from different eras
+ * 
  */
 
 import java.util.Scanner;

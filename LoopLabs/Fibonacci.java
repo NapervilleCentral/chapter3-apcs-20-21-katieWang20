@@ -1,9 +1,10 @@
 
 /**
- * Write a description of class Fibonacci here.
- *
- * @author (your name)
- * @version (a version number or a date)
+ * Katie Wang
+ * 10/26/2022
+ * Fibonacci program
+ * This program asks user how many numbers of the fibonacci sequence that they want
+ * Then returns the numbers
  */
 
 import java.util.Scanner;
@@ -18,7 +19,7 @@ public class Fibonacci
         int y = 1;
         int prevNum1 = 0;
         int prevNum2 = 1;
-        int prod = 0;
+        int sum = 0;
         
         System.out.println("Enter the max number of Fibonacci numbers you want: ");
         int maxNum = input.nextInt();
@@ -26,13 +27,16 @@ public class Fibonacci
       
         for (int count = 1; count <= maxNum; count ++){
                 System.out.println(prevNum1);
+                //split fibonacci sequence into 3 sections
+                //  prevNum1 = addend, prevNum2 = addend, sum = sum
                 
-                prod = prevNum1 + prevNum2;
-            
+                // add the  two previous numbers (addends) to get the sum
+                
+                sum = prevNum1 + prevNum2;
+                
+                // move each variable to the next number of the sequence
                 prevNum1 = prevNum2;
-                prevNum2 = prod;
-            
-
+                prevNum2 = sum;
             
         }
     }
