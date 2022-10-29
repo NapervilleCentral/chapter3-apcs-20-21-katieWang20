@@ -112,5 +112,10 @@ public class PresSpeeches
         System.out.println(findWord + " is said " + findWordCount + " times.");
         System.out.println(findWord2 + " is said " + findWordCount2 + " times.");
         System.out.println(findWord3 + " is said " + findWordCount3 + " times.");
+    // the word length was longer back then in the 1800s since presidents liked using big fancy words for some reason.
+    // shows they are very educated, I suppose.
+    // They use "we" a lot to sympathise with the people, make the president seem relatable to the common man.
+    
+    
     }
 }
